@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            }
+        </script>
+
+        <title>Phase-1 Project</title>
+        <div class="topnav">
+          <a class="active" href="#home">Contact Searcher</a>
+          <button onclick="myFunction()">Night Mode</button>
+            <div class="search-container">
+              <input type="text" placeholder="Search.." name="search" id="search" data-search>
+            </div>
+        </div>
+
+    </head>
+
+    <body>
+
+       
+    
+              <div class="user-cards" data-user-cards-container></div>
+                <template data-user-template>
+                    <div class="card">
+                      <div class="header" data-header></div>
+                      <div class="body" data-body></div>
+                        <div class="card-footer">
+
+
+                            <div class="header">
+                                <div class="dropdown" data-dropdown>
+                                    <button class="link" data-dropdown-button>Details</button>
+                                    <div class="dropdown-menu information-grid">
+                                        <div>
+                                            <div class="dropdown-heading">Phone:
+                                            <div class="dropdown-heading">Address:
+                                            <div class="dropdown-heading">Website:
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </template>
+            
+       
+
+    <script src="index.js"></script>
+        
+    </body>
+</html>
+       
+
+

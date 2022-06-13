@@ -1,0 +1,155 @@
+
+
+.search-container {
+    display: flex;
+    flex-direction: table-column;
+    gap: .25rem;
+}
+
+input {font-size: 1rem;}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+    gap: .45rem;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: .25rem;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+    margin: .5rem;
+}
+ 
+.card > .header { 
+    font-size: 1.25rem;
+    margin-bottom: .5rem; 
+}
+
+.card > .body {
+    font-size: .9rem;
+}
+
+.card > .footer {
+    font-size: .9rem;
+} */ */
+
+.hide { display: none; }
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Adds background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1b1a1c;
+}
+
+/* Styles links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Changes color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+  margin-top: -4px;
+  padding: 4px 8px;
+
+}
+
+/* Styles search box inside the navigation bar */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+
+body{
+text-align:center;
+
+}
+
+
+.dark{
+    background-color: rgb(0, 0, 0);
+   
+}
+
+.dark > .card {
+    background-color: #1b1a1c;
+}
+.dark > .topnav {
+    background-color: rgb(254, 254, 255);
+}
+
+.dark > .topnav a  {
+    color: rgb(0, 0, 0);
+}
+
+.link {
+    --color: hsl(200, 50%, 50%);
+    background: var(--color);
+    color:rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    padding: .15rem .75rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    float: left;
+    margin-top: .5rem;
+}
+
+.dropdown.active > .link, 
+.link:hover {
+    background:hsl(200, 50%, 60%);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.card:hover {
+    background:hsl(201, 35%, 22%);
+    color: rgb(255, 255, 255);
+}
+
+

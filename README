@@ -1,0 +1,15 @@
+Bryce Hayworth's Phase 1 project.
+
+Hello and welcome to my first solo project. Here I have wrtten an index.html, script.js, and style.css. 
+
+These three code files work together to mock up a website which pulls information from a public API and displays it in the form of "cards." 
+
+These cards first display names and emails, and then have a button which can be selected to show further information about each contact. The additional information currently doesn't populate from the api as I was more concerned with making the button attribute functional.
+
+In addition to these cards there is a search bar, which when used, will filter through the names on the cards, letter by letter, and hide any card that doesn't match. This would be especially beneficial with a larger API with hundreds of contacts where you wouldn't be able to see them all on one screen.
+
+Additionally, I added some CSS to change the color of the cards when the mouse hovers over them. Originally I made this possible with a function in my JS file, and some additional cone in my index.js, but I later found a much simpler, cleaner, quicker way to code this in my CSS file instead. 
+
+Lastly, my "app" had a night mode, or a light/dark toggle button. 
+
+This project was really beneficial to me by forcin gme to really focus on the code itself and figure how it works. I feel like I have a better understanding now of the way everything works together than I did before starting the Phase-1 project. 
